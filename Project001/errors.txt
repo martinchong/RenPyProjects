@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 155: choice menuitem expects a non-empty block.
+    "Ask for Agent Foster's first name":
+                                        ^
+
+Ren'Py Version: Ren'Py 7.1.3.1092
+Tue Mar 19 17:22:59 2019
