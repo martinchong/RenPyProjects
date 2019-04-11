@@ -166,10 +166,34 @@ label start:
 
         a "Fine... It's Ivan. My name is Ivan Foster. Can we please carry on?"
 
+        menu:
+            "Yes, lets carry on":
+                jump end2
+
+            "Hold up. This is strange, I sense something fishy":
+                jump fishy
+
     label end1:
         e "You hear something buzzing again but this time its not the phone."
 
         e "You looked around and found a bomb under the chair"
+
+        return
+
+
+    label end2:
+        a "Okay, I just got word from our tech team, they said they are able
+            to intercept the passcode to turn on the GPS on your phone."
+        a "Try punching in 666824."
+
+        e "You punched in the numbers and dial"
+
+        mc "Done! What now?"
+
+        a "HAHAHAHA. Now you die, you just activiated your own death trap."
+
+        jump end1
+
 
         return
 
