@@ -148,7 +148,7 @@ label start:
         if blood == 1:
             mc "Oh wait, I saw this earlier, I recall it wrotes 'Ivan Fos'."
 
-            if info ==1:
+            if info == 1:
                 mc "It also fits the serial killers initial, I.F. Could it be?"
 
                 menu:
@@ -173,6 +173,61 @@ label start:
             "Hold up. This is strange, I sense something fishy":
                 jump fishy
 
+    label fishy:
+        mc "No way this is coincidence, you are lying to me."
+
+        a "What do you mean? Is this a joke? I am trying to save you here!"
+
+        mc "I would hope thats true but there is just too many effidence that
+            suggest otherwise. First off..."
+
+        menu:
+            "Agent Foster's real name":
+                jump fishy2
+
+            "Agent Foster's real age":
+                a "Age? Like I am old of something?"
+                jump fail
+
+            "Agent Foster's real estate":
+                jump fail
+
+    label fishy2:
+        mc "You name is written on the wall."
+
+        a "Hold up. How would you know that's my name when half of it is
+            blurred out?"
+
+        mc "And how would you know half of it is blurred out? I don't recall
+            tell you that."
+
+        e "This is good, he's panicing, I should keep on going."
+
+        a "Okay, so what if it's my name? It doesn't mean anything."
+
+        mc "It surely does, the relation between your name and the killer is..."
+
+        menu:
+            "The number of words":
+                jump fail
+
+            "The meaning of it":
+                jump fail
+
+            "The initials":
+                jump fishy3
+
+    label fishy3:
+        mc "You name's initials are same as the killer's initials!"
+
+
+    label fail:
+        a "Is that all you have to say? That makes comepletely no sense."
+
+        mc "Emmmmmmm... I guess you are right..."
+
+        mc "I am sorry, I wasn't thinking straight."
+
     label end1:
         e "You hear something buzzing again but this time its not the phone."
 
@@ -182,9 +237,9 @@ label start:
 
 
     label end2:
-        a "Okay, I just got word from our tech team, they said they are able
-            to intercept the passcode to turn on the GPS on your phone."
-        a "Try punching in 666824."
+        a "Okay, I just got word from our tech team, they said if you dial
+            our secure line, we can track the GPS on your phone."
+        a "Try punching in 6668241121."
 
         e "You punched in the numbers and dial"
 

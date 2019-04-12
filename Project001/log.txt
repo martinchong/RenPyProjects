@@ -1,34 +1,34 @@
-Tue Apr  2 19:43:44 2019
+Thu Apr 11 23:30:15 2019
 Darwin-15.6.0-x86_64-i386-64bit
 Ren'Py 7.1.3.1092
  
 
-Bootstrap to the start of init.init took 0.10s
-Early init took 0.00s
-Loader init took 0.04s
-Loading error handling took 0.03s
+Bootstrap to the start of init.init took 0.11s
+Early init took 0.01s
+Loader init took 0.01s
+Loading error handling took 0.02s
 Loading script took 0.20s
-Loading save slot metadata. took 0.02s
+Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.06s
-Loading analysis data took 0.05s
+Running init code took 0.07s
+Loading analysis data took 0.04s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to '/Users/martincc/Library/RenPy/backups/Project001':
-Dump and make backups. took 0.07s
+Dump and make backups. took 0.08s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.02s
 DPI scale factor: 1.000000
-Creating interface object took 0.13s
+Creating interface object took 0.12s
 Cleaning stores took 0.00s
 Init translation took 0.03s
 Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
-Save screen analysis took 0.07s
-Prepare screens took 0.08s
+Save screen analysis took 0.08s
+Prepare screens took 0.09s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.06s
 Running _start took 0.00s
@@ -185,18 +185,11 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 1.2530939579s
+Total time until interface ready: 1.24424409866s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.015550 seconds.
-- Frame drawn at 0.032069 seconds.
-- Frame drawn at 0.050790 seconds.
-- Frame drawn at 0.064160 seconds.
-- 0.064160 seconds to render 5 frames.
-Cleaning stores took 0.00s
-Init translation took 0.23s
-Build styles took 0.01s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
+- Frame drawn at 0.012771 seconds.
+- Frame drawn at 0.032295 seconds.
+- Frame drawn at 0.050784 seconds.
+- Frame drawn at 0.063046 seconds.
+- 0.063046 seconds to render 5 frames.
