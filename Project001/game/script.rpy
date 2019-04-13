@@ -63,7 +63,7 @@ label start:
         v "My name is Agent Foster from the FBI. Listen carefully,
         I know you are scared right now but please stay calm."
 
-        v "We believe that you are the newest target of the serial killer known
+        a "We believe that you are the newest target of the serial killer known
         as 'I.F.'. Can you tell me where you are now?"
 
         menu:
@@ -166,6 +166,11 @@ label start:
 
         a "Fine... It's Ivan. My name is Ivan Foster. Can we please carry on?"
 
+        a "Okay, I just got word from our tech team, they said if you dial
+            our secure line, we can track the GPS on your phone."
+
+        a "Try punching in 6664."
+
         menu:
             "Yes, lets carry on":
                 jump end2
@@ -220,6 +225,26 @@ label start:
     label fishy3:
         mc "You name's initials are same as the killer's initials!"
 
+        a "This is purely coincidence. What makes you even think I am the killer?"
+
+        e "This is it, I got him, time to show him the biggest mistake he made."
+
+        menu:
+            "My location":
+                jump end2
+
+            "The FBI tech team":
+                jump end2
+
+            "The secure line number":
+                jump outbreak
+
+    label outbreak:
+        a "HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA"
+
+        a "WAAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKA"
+
+        a "I guess you got me."
 
     label fail:
         a "Is that all you have to say? That makes comepletely no sense."
@@ -237,10 +262,6 @@ label start:
 
 
     label end2:
-        a "Okay, I just got word from our tech team, they said if you dial
-            our secure line, we can track the GPS on your phone."
-        a "Try punching in 6668241121."
-
         e "You punched in the numbers and dial"
 
         mc "Done! What now?"
