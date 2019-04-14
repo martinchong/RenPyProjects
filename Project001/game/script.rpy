@@ -8,6 +8,7 @@ define v = Character("Voice")
 define mc = Character("[name]")
 define e = Character("")
 define a = Character("Agent Foster")
+define f = Character("I.F.")
 define flash = Fade(0.1, 0.0, 0.5, color="#fff")
 
 # The game starts here
@@ -136,7 +137,7 @@ label start:
 
             e "Got a broken metal pole."
 
-            mc "I found a metal pole but I think it has much use."
+            mc "I found a metal pole but I think don't it has much use."
             $pipe = 1
 
         e "You see some red faded words, but it seems it has dried off into a
@@ -240,11 +241,44 @@ label start:
                 jump outbreak
 
     label outbreak:
-        a "HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA"
+        a "HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA!!!!"
 
-        a "WAAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKA"
+        a "WAAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKAKA!!!!!!!!"
 
         a "I guess you got me."
+
+        f "I am indeed the one who caught you and trapped you here!"
+
+        f "Look at these previous idiots trying to write my name on the wall
+            with their blood. PATHETIC!!!"
+
+        f "Now I can finall have some fun..."
+
+        e "BEEP! BEEP! BEEP!"
+
+        e "You heard the some kind of a lock open sound coming the locked door"
+
+        mc "This is it, this is my chance of escaping."
+
+        e "You walk towards the door as it slowly opens"
+
+        e "Suddently a flash!!"
+        scene bg droom
+        with flash
+
+        e "A man jumped towards you and pinned you down."
+
+        menu:
+            "Stab him with the broken pipe"
+            jump end3
+
+            "Kick him in the nuts"
+            jump fight
+
+    label fight:
+        e "You kicked him as hard as you can and you hear a loud scream."
+
+        f "AHHH!!"
 
     label fail:
         a "Is that all you have to say? That makes comepletely no sense."
@@ -270,6 +304,21 @@ label start:
 
         jump end1
 
+
+        return
+
+    label end3:
+        e "You swing the pipe at his face but he blocked it with his hand."
+
+        f "You think this will work? FUNNY!"
+
+        e "He grabbed the pipe and hit you in the head."
+        scene bg droom
+        with flash
+
+        e "BAM!"
+        scene bg droom
+        with flash
 
         return
 
