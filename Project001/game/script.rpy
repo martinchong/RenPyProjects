@@ -269,7 +269,7 @@ label start:
         e "A man jumped towards you and pinned you down."
 
         menu:
-            "Stab him with the broken pipe"
+            "Hit him with the broken pipe"
             jump end3
 
             "Kick him in the nuts"
@@ -279,6 +279,27 @@ label start:
         e "You kicked him as hard as you can and you hear a loud scream."
 
         f "AHHH!!"
+
+        f "What have you done!?"
+
+        menu:
+            "Hit him with the broken pipe"
+            jump end3
+
+            "Poke him in the eye"
+            jump fight2
+
+    label fight2:
+        e "Your two fingers launches like two spears and hit I.F. right in the
+        eye balls."
+
+        f "I can't see!"
+
+        e "You see I.F. coving his eyes with his hands"
+
+        menu:
+            "Hit him with the broken pipe"
+            jump end4
 
     label fail:
         a "Is that all you have to say? That makes comepletely no sense."
@@ -320,7 +341,18 @@ label start:
         scene bg droom
         with flash
 
+        e "Your consciousness begins to fade...."
         return
+
+    label end4:
+        e "You swing the pipe at his face and he falls flat on he ground"
+
+        m "Did I do it? Is he dead?"
+
+        e "You poke his body again with the pipe but he is just there lying on
+        the ground"
+
+        e "You quickly run out of the door and don't even bother to look back"
 
     # This ends the game.
 
