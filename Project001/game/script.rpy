@@ -354,6 +354,20 @@ label start:
 
         e "You quickly run out of the door and don't even bother to look back"
 
+        v "Stand right there! Stop moving!"
+
+        e "You hear sirens ringing and multiple flashlight shinning your way."
+
+        mc "It's alright, I killed him. He's dead."
+
+        v "Damn, he got Agent Foster, you dirty serial killer!"
+
+        mc "Wait no, let me explain!"
+
+        e "BAM! BAM! BAM!"
+
+        e "This is the end of the story."
+
     # This ends the game.
 
     return
