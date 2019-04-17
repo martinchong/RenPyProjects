@@ -269,11 +269,11 @@ label start:
         e "A man jumped towards you and pinned you down."
 
         menu:
-            "Hit him with the broken pipe"
-            jump end3
+            "Hit him with the broken pipe":
+                jump end3
 
-            "Kick him in the nuts"
-            jump fight
+            "Kick him in the nuts":
+                jump fight
 
     label fight:
         e "You kicked him as hard as you can and you hear a loud scream."
@@ -283,11 +283,11 @@ label start:
         f "What have you done!?"
 
         menu:
-            "Hit him with the broken pipe"
-            jump end3
+            "Hit him with the broken pipe":
+                jump end3
 
-            "Poke him in the eye"
-            jump fight2
+            "Poke him in the eye":
+                jump fight2
 
     label fight2:
         e "Your two fingers launches like two spears and hit I.F. right in the
@@ -298,8 +298,8 @@ label start:
         e "You see I.F. coving his eyes with his hands"
 
         menu:
-            "Hit him with the broken pipe"
-            jump end4
+            "Hit him with the broken pipe":
+                jump end4
 
     label fail:
         a "Is that all you have to say? That makes comepletely no sense."
