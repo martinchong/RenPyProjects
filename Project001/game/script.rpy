@@ -193,9 +193,12 @@ label start:
 
             "Agent Foster's real age":
                 a "Age? Like I am old of something?"
+
+                a "You don't even know how old I am."
                 jump fail
 
             "Agent Foster's real estate":
+                a "I don't even own any real estate."
                 jump fail
 
     label fishy2:
@@ -215,9 +218,13 @@ label start:
 
         menu:
             "The number of words":
+                a "Like 10 letters total?"
                 jump fail
 
             "The meaning of it":
+                a "I don't even know whats the meaning behind my name."
+
+                a "It's just a name given by my parents."
                 jump fail
 
             "The initials":
@@ -232,10 +239,14 @@ label start:
 
         menu:
             "My location":
-                jump end2
+                a "Do you even know where you are?"
+                jump fail
 
             "The FBI tech team":
-                jump end2
+                a "What's wrong with the tech team?"
+
+                a "You don't even know them."
+                jump fail
 
             "The secure line number":
                 jump outbreak
