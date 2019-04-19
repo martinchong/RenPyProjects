@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 188: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Agent Foster's real age"
-                             ^
+File "game/script.rpy", line 272: choice menuitem expects a non-empty block.
+    "Hit him with the broken pipe":
+                                   ^
+
+File "game/script.rpy", line 286: choice menuitem expects a non-empty block.
+    "Hit him with the broken pipe":
+                                   ^
+
+File "game/script.rpy", line 301: choice menuitem expects a non-empty block.
+    "Hit him with the broken pipe":
+                                   ^
 
 Ren'Py Version: Ren'Py 7.1.3.1092
-Thu Apr 11 23:29:19 2019
+Tue Apr 16 23:03:36 2019

@@ -29,7 +29,7 @@ label start:
             renpy.say(e, "Okay fine, Nobody it is.")
             name = "Nobody"
 
-    scene bg droom
+    scene bg droomc
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -349,7 +349,7 @@ label start:
         with flash
 
         e "BAM!"
-        scene bg droom
+        scene bg droomc
         with flash
 
         e "Your consciousness begins to fade...."
@@ -358,13 +358,15 @@ label start:
     label end4:
         e "You swing the pipe at his face and he falls flat on he ground"
 
-        m "Did I do it? Is he dead?"
+        mc "Did I do it? Is he dead?"
 
         e "You poke his body again with the pipe but he is just there lying on
         the ground"
 
         e "You quickly run out of the door and don't even bother to look back"
 
+        scene bg cops
+        with flash
         v "Stand right there! Stop moving!"
 
         e "You hear sirens ringing and multiple flashlight shinning your way."
