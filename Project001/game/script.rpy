@@ -170,7 +170,7 @@ label start:
         a "Okay, I just got word from our tech team, they said if you dial
             our secure line, we can track the GPS on your phone."
 
-        a "Try punching in 6664."
+        a "Try punching in 911."
 
         menu:
             "Yes, lets carry on":
@@ -249,6 +249,14 @@ label start:
                 jump fail
 
             "The secure line number":
+                a "What's wrong with the number? I didn't come up with it."
+
+                a "It was the tech team."
+
+                a "Stop lying! Everyone knows 911 is not a secure line number!"
+
+                a "It's emergency number. And its pretty clear that this number
+                does not dial there!"
                 jump outbreak
 
     label outbreak:
